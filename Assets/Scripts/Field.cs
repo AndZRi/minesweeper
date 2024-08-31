@@ -124,8 +124,6 @@ public class Field : MonoBehaviour
         // Recreating cells
         ClearField();
         InitializePrefabs();
-
-        isGenerated = false;
     }
 
     public void ClearField()
@@ -139,6 +137,8 @@ public class Field : MonoBehaviour
             }
         }
         Cells.Clear();
+
+        isGenerated = false;
     }
 
     public byte GetMinesAround(Vector2Int position)
